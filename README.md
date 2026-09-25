@@ -9,18 +9,12 @@ Um aplicativo web romântico e interativo desenvolvido em HTML, CSS e JavaScript
   <img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
   <img src="https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" />
-  <br><br>
   
-  <!-- Botão Vermelho -->
-  <a href="https://larissacristina-dev.github.io/Date/" target="_blank" style="background-color: #ff3366; color: white; padding: 14px 28px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-block; box-shadow: 0 4px 20px rgba(255, 51, 102, 0.5); font-size: 15px; margin-right: 10px;">
-    🚀 ABRIR APP
+  <!-- Quadrado roxo igual aos de cima com link para o app -->
+  <br>
+  <a href="https://larissacristina-dev.github.io/Date/" target="_blank">
+    <img src="https://img.shields.io/badge/💜_APP-7C3AED?style=for-the-badge&logo=google-chrome&logoColor=white" />
   </a>
-
-  <!-- Botão Roxo -->
-  <a href="https://larissacristina-dev.github.io/Date/" target="_blank" style="background-color: #7c3aed; color: white; padding: 14px 28px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-block; box-shadow: 0 4px 20px rgba(124, 58, 237, 0.5); font-size: 15px;">
-    💜 APP
-  </a>
-  
   <br><br>
 </div>
 

@@ -4,6 +4,12 @@ Um aplicativo web romântico e interativo desenvolvido em HTML, CSS e JavaScript
 
 <div align="center">
   <br>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <br><br>
   <a href="https://larissacristina-dev.github.io/Date/" target="_blank" style="background-color: #6b21a8; color: white; padding: 12px 28px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-block; box-shadow: 0 4px 15px rgba(107, 33, 168, 0.4);">
     🚀 ABRIR APP
   </a>
@@ -19,7 +25,7 @@ Um aplicativo web romântico e interativo desenvolvido em HTML, CSS e JavaScript
   * Grelhas interativas com limite máximo de 2 seleções por categoria (com avisos visuais do tipo *toast*).
   * Campo de texto personalizado ("Outra coisa / Outra vibe") integrado dinamicamente nas escolhas.
 * **Agendamento de Data e Hora:** Selecionador de data e horário flexível para definir o momento perfeito do encontro.
-* **Integração Completa com o WhatsApp:** Resumo final organizado e codificado de forma segura que envia automaticamente a mensagem de confirmação para o número configurado (`seu numero`) com a frase especial: *"Fica pronta que eu vou te buscar 🏍️💨"*.
+* **Integração Completa com o WhatsApp:** Resumo final organizado e codificado de forma segura que envia automaticamente a mensagem de confirmação para o número configurado (`5511959355941`) com a frase especial: *"Fica pronta que eu vou te buscar 🏍️💨"*.
 
 ## 🛠️ Tecnologias Utilizadas
 

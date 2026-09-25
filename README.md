@@ -4,7 +4,7 @@ Um aplicativo web romântico e interativo desenvolvido em HTML, CSS e JavaScript
 
 <div align="center">
   <br>
-  <a href="https://larissacristina-dev.github.io/Data/" target="_blank" style="background-color: #6b21a8; color: white; padding: 12px 28px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-block; box-shadow: 0 4px 15px rgba(107, 33, 168, 0.4);">
+  <a href="https://larissacristina-dev.github.io/Date/" target="_blank" style="background-color: #6b21a8; color: white; padding: 12px 28px; border-radius: 25px; text-decoration: none; font-weight: bold; display: inline-block; box-shadow: 0 4px 15px rgba(107, 33, 168, 0.4);">
     🚀 ABRIR APP
   </a>
   <br><br>

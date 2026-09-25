@@ -22,7 +22,6 @@
             position: relative;
         }
 
-        
         .bg-photos {
             position: absolute;
             top: 0;
@@ -69,24 +68,26 @@
             pointer-events: none;
         }
 
-        
         .mobile-container {
-    width: 360px;
-    height: 700px;
-    background: rgba(40, 5, 5, 0.75); 
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 2px solid rgba(255, 255, 255, 0.15);
-    border-radius: 35px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-    z-index: 2;                  
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 30px 20px;
-    position: relative;
-    
-}
+            width: 360px;
+            height: 700px;
+            
+            background: linear-gradient(rgba(40, 5, 5, 0.82), rgba(40, 5, 5, 0.82)), url('fundo.png');
+            background-size: cover;
+            background-position: center;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 2px solid rgba(255, 255, 255, 0.15);
+            border-radius: 35px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            z-index: 3;                   
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 30px 20px;
+            position: relative;
+            overflow: hidden;
+        }
 
         .screen {
             display: none;
@@ -228,7 +229,6 @@
             outline: none;
         }
 
-        
         #toast {
             position: absolute;
             bottom: 20px;
@@ -252,12 +252,10 @@
 </head>
 <body>
 
-    
     <div class="bg-photos" id="bgPhotos"></div>
     <div class="overlay"></div>
 
     <div class="mobile-container">
-        
         
         <div class="screen active" id="screen-1">
             <div class="emoji-icon">🥺</div>
@@ -268,7 +266,6 @@
             </div>
         </div>
 
-        
         <div class="screen" id="screen-2">
             <h2>O que tá afim? 🍽️</h2>
             <div class="subtitle">Escolha até 2 opções</div>
@@ -287,7 +284,6 @@
             <button class="btn" style="margin-top: 15px;" onclick="validateAndNext(3, 'food')">PRÓXIMO</button>
         </div>
 
-        
         <div class="screen" id="screen-3">
             <h2>Qual é a vibe? ✨</h2>
             <div class="subtitle">Escolha até 2 opções</div>
@@ -305,7 +301,6 @@
             <button class="btn" style="margin-top: 15px;" onclick="validateAndNext(4, 'vibe')">PRÓXIMO</button>
         </div>
 
-        
         <div class="screen" id="screen-4">
             <h2>Quando você tá livre? 📅</h2>
             <div style="width: 100%; margin-top: 20px;">
@@ -318,7 +313,6 @@
             <button class="btn" onclick="nextScreen(5); setupFinalSummary();">SELECIONAR A DATA</button>
         </div>
 
-        
         <div class="screen" id="screen-5">
             <div class="emoji-icon">👩🏻‍🦰🌹</div>
             <h2 style="margin-bottom: 10px;">TÔ CONTIGO, GATINHA. ❤️</h2>
@@ -336,13 +330,11 @@
     <div id="toast">Máximo de 2 escolhas permitidas!</div>
 
     <script>
-        
-      const photos = ['image.png', 'image_2.png', 'image_3.png', 'image_4.png', 'image_5.png', 'image_6.png'];
+        const photos = ['image.png', 'image_2.png', 'image_3.png', 'image_4.png', 'image_5.png', 'image_6.png'];
         const emojis = ['❤️', '💖', '✨', '💘', '💗'];
         const bgContainer = document.getElementById('bgPhotos');
         
-        
-        for (let i = 0; i < 45; i++) {
+        for (let i = 0; i < 55; i++) {
             const el = document.createElement(i % 2 === 0 ? 'img' : 'div');
             
             if (i % 2 === 0) {
@@ -365,8 +357,9 @@
             
             el.style.left = Math.random() * 90 + '%';
             el.style.top = Math.random() * 90 + '%';
-            el.style.animationDuration = (10 + Math.random() * 10) + 's';
-            el.style.animationDelay = (Math.random() * 5) + 's';
+            
+            el.style.animationDuration = (5 + Math.random() * 6) + 's';
+            el.style.animationDelay = (Math.random() * 4) + 's';
             
             el.style.setProperty('--randX', (Math.random() * 350 - 175) + 'px');
             el.style.setProperty('--randY', (Math.random() * 350 - 175) + 'px');
@@ -388,11 +381,9 @@
             document.getElementById('screen-' + screenNum).classList.add('active');
         }
 
-        
-       let returnTimeout;
+        let returnTimeout;
         function dodgeBtn(event) {
             const btnNao = document.getElementById('btnNao');
-            
             
             let moveX = (Math.random() - 0.5) * 240;
             let moveY = (Math.random() - 0.5) * 180;
@@ -405,7 +396,6 @@
                 const mouseX = event.clientX;
                 const mouseY = event.clientY;
 
-                
                 const dirX = btnCenterX > mouseX ? 1 : -1;
                 const dirY = btnCenterY > mouseY ? 1 : -1;
 
@@ -420,11 +410,10 @@
             let newX = currentX + moveX;
             let newY = currentY + moveY;
 
-           
-            const maxRight = 80;   
-            const maxLeft = -80;   
-            const maxBottom = 70;  
-            const maxTop = -70;    
+            const maxRight = 80;    
+            const maxLeft = -80;    
+            const maxBottom = 70;   
+            const maxTop = -70;     
 
             if (newX > maxRight) newX = maxRight;
             if (newX < maxLeft) newX = maxLeft;
@@ -513,7 +502,7 @@
             return `${day} de ${meses[parseInt(month) - 1]} de ${year}`;
         }
 
-       function sendToWhatsApp() {
+        function sendToWhatsApp() {
             const seuNumero = "5511959355941";
             
             let foodList = [...selections.food];
@@ -522,7 +511,6 @@
             let vibeList = [...selections.vibe];
             if (selections.vibeOther) vibeList.push(selections.vibeOther);
 
-            // Mensagem construída de forma 100% segura para os emojis não corromperem
             const mensagem = "Amor, aceitei o date! ❤️\n\n🍽️ Comida: " + foodList.join(', ') + "\n✨ Vibe: " + vibeList.join(', ') + "\n📅 Quando: " + selections.date + " às " + selections.time;
             
             const textoCodificado = encodeURIComponent(mensagem);

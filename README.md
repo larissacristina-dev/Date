@@ -20,7 +20,7 @@ Um aplicativo web romântico e interativo desenvolvido em HTML, CSS e JavaScript
   * Grelhas interativas com um limite máximo de 2 seleções por categoria (acompanhadas de avisos visuais do tipo *toast*).
   * Campo de texto personalizado ("Outra coisa / Outra vibe") integrado dinamicamente nas escolhas.
 * **Agendamento de Data e Hora:** Seletor de data e horário flexível para definir o momento perfeito do encontro.
-* **Integração Completa com o WhatsApp:** Resumo final organizado e codificado de forma segura que envia automaticamente a mensagem de confirmação para o número configurado (`5511959355941`) com a frase especial: *"Fica pronta que eu vou te buscar 🏍️💨"*.
+* **Integração Completa com o WhatsApp:** Resumo final organizado e codificado de forma segura que envia automaticamente a mensagem de confirmação para o número configurado (`seu celular`) com a frase especial: *"Fica pronta que eu vou te buscar 🏍️💨"*.
 
 ## 🛠️ Tecnologias Utilizadas
 
